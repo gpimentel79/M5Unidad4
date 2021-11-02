@@ -13,7 +13,7 @@ router.get('/', function(req, res, next) {
 /*Logout */
 router.get('/logout',function(req,res,next)
 {
-  req.session.destroy();
+  req.session.destroy(); //destruye la variables de sesion
   res.render('admin/login',{
   layout: 'admin/layout'
 
